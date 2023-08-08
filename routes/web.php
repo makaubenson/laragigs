@@ -35,6 +35,6 @@ Route::get('/posts/{id}',function($id){
     //"Dump and Die with Data". It's a variation of the dd()
     // (Dump and Die) function, which is commonly used for debugging 
     //purposes in PHP and Laravel applications.
-    ddd($id);
+    // ddd($id);
     return response('Post '.$id);
 })->where('id','[0-9]+');
