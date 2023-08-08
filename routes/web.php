@@ -25,5 +25,9 @@ Route::get('/hello', function(){
 });
 
 Route::get('/posts/{id}',function($id){
-    return response('Post '.$id);
+    //The full name for dd() in Laravel is dump and die. 
+    //It is a helper function that is used to dump the contents
+    // of a variable to the browser and then stop the script execution
+    dd($id); //dump and die
+    // return response('Post '.$id);
 })->where('id','[0-9]+');
